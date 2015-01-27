@@ -1,0 +1,366 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/gzileni/GitHub/foursquare-geojson',
+5 verbose install   [ 'underscore', 'request', 'async', 'querystring' ] ]
+6 info preinstall foursquare-geojson@1.0.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'underscore@^1.7.0', null ]
+9 verbose cache add name=undefined spec="underscore@^1.7.0" args=["underscore@^1.7.0",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'underscore@^1.7.0',
+10 verbose parsed url   path: 'underscore@^1.7.0',
+10 verbose parsed url   href: 'underscore@^1.7.0' }
+11 verbose cache add [ 'request@2.47.0', null ]
+12 verbose cache add name=undefined spec="request@2.47.0" args=["request@2.47.0",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'request@2.47.0',
+13 verbose parsed url   path: 'request@2.47.0',
+13 verbose parsed url   href: 'request@2.47.0' }
+14 verbose cache add [ 'async@^0.2.0', null ]
+15 verbose cache add name=undefined spec="async@^0.2.0" args=["async@^0.2.0",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'async@^0.2.0',
+16 verbose parsed url   path: 'async@^0.2.0',
+16 verbose parsed url   href: 'async@^0.2.0' }
+17 verbose cache add [ 'querystring@^0.9.0', null ]
+18 verbose cache add name=undefined spec="querystring@^0.9.0" args=["querystring@^0.9.0",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'querystring@^0.9.0',
+19 verbose parsed url   path: 'querystring@^0.9.0',
+19 verbose parsed url   href: 'querystring@^0.9.0' }
+20 verbose cache add name="underscore" spec="^1.7.0" args=["underscore","^1.7.0"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '^1.7.0',
+21 verbose parsed url   path: '^1.7.0',
+21 verbose parsed url   href: '^1.7.0' }
+22 verbose addNamed [ 'underscore', '^1.7.0' ]
+23 verbose addNamed [ null, '>=1.7.0-0 <2.0.0-0' ]
+24 verbose cache add name="request" spec="2.47.0" args=["request","2.47.0"]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: '2.47.0',
+25 verbose parsed url   path: '2.47.0',
+25 verbose parsed url   href: '2.47.0' }
+26 verbose addNamed [ 'request', '2.47.0' ]
+27 verbose addNamed [ '2.47.0', '2.47.0' ]
+28 verbose cache add name="async" spec="^0.2.0" args=["async","^0.2.0"]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: '^0.2.0',
+29 verbose parsed url   path: '^0.2.0',
+29 verbose parsed url   href: '^0.2.0' }
+30 verbose addNamed [ 'async', '^0.2.0' ]
+31 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+32 verbose cache add name="querystring" spec="^0.9.0" args=["querystring","^0.9.0"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '^0.9.0',
+33 verbose parsed url   path: '^0.9.0',
+33 verbose parsed url   href: '^0.9.0' }
+34 verbose addNamed [ 'querystring', '^0.9.0' ]
+35 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+36 silly lockFile efdc3de9-underscore-1-7-0 underscore@^1.7.0
+37 verbose lock underscore@^1.7.0 /Users/gzileni/.npm/efdc3de9-underscore-1-7-0.lock
+38 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+39 verbose lock request@2.47.0 /Users/gzileni/.npm/6725db09-request-2-47-0.lock
+40 silly lockFile d7996a11-async-0-2-0 async@^0.2.0
+41 verbose lock async@^0.2.0 /Users/gzileni/.npm/d7996a11-async-0-2-0.lock
+42 silly lockFile 7e5f0068-querystring-0-9-0 querystring@^0.9.0
+43 verbose lock querystring@^0.9.0 /Users/gzileni/.npm/7e5f0068-querystring-0-9-0.lock
+44 silly addNameRange { name: 'querystring',
+44 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+44 silly addNameRange   hasData: false }
+45 silly addNameRange { name: 'async', range: '>=0.2.0-0 <0.3.0-0', hasData: false }
+46 silly addNameRange { name: 'underscore',
+46 silly addNameRange   range: '>=1.7.0-0 <2.0.0-0',
+46 silly addNameRange   hasData: false }
+47 verbose request where is /querystring
+48 verbose request registry https://registry.npmjs.org/
+49 verbose request id 1bd87d79d0f7f0e9
+50 verbose url raw /querystring
+51 verbose url resolving [ 'https://registry.npmjs.org/', './querystring' ]
+52 verbose url resolved https://registry.npmjs.org/querystring
+53 verbose request where is https://registry.npmjs.org/querystring
+54 info trying registry request attempt 1 at 11:23:05
+55 verbose etag "7GSKGOXZYPS2CGG795DQRS7OL"
+56 http GET https://registry.npmjs.org/querystring
+57 verbose request where is /underscore
+58 verbose request registry https://registry.npmjs.org/
+59 verbose url raw /underscore
+60 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+61 verbose url resolved https://registry.npmjs.org/underscore
+62 verbose request where is https://registry.npmjs.org/underscore
+63 info trying registry request attempt 1 at 11:23:05
+64 verbose etag "58OXGXW4G0USYZ2XSQPCQ33VZ"
+65 http GET https://registry.npmjs.org/underscore
+66 verbose request where is /async
+67 verbose request registry https://registry.npmjs.org/
+68 verbose url raw /async
+69 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+70 verbose url resolved https://registry.npmjs.org/async
+71 verbose request where is https://registry.npmjs.org/async
+72 info trying registry request attempt 1 at 11:23:05
+73 verbose etag "81VKEYJHWHQK4F4ZFAK39G054"
+74 http GET https://registry.npmjs.org/async
+75 verbose request where is /request
+76 verbose request registry https://registry.npmjs.org/
+77 verbose url raw /request
+78 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+79 verbose url resolved https://registry.npmjs.org/request
+80 verbose request where is https://registry.npmjs.org/request
+81 info trying registry request attempt 1 at 11:23:05
+82 verbose etag "9TH7WMY0L5MYQ5Z9L5VA45CD8"
+83 http GET https://registry.npmjs.org/request
+84 http 304 https://registry.npmjs.org/request
+85 silly registry.get cb [ 304,
+85 silly registry.get   { date: 'Tue, 27 Jan 2015 10:23:07 GMT',
+85 silly registry.get     server: 'Apache',
+85 silly registry.get     via: '1.1 varnish',
+85 silly registry.get     'last-modified': 'Tue, 27 Jan 2015 10:23:07 GMT',
+85 silly registry.get     'cache-control': 'max-age=60',
+85 silly registry.get     etag: '"9TH7WMY0L5MYQ5Z9L5VA45CD8"',
+85 silly registry.get     age: '25',
+85 silly registry.get     'x-served-by': 'cache-fra1221-FRA',
+85 silly registry.get     'x-cache': 'HIT',
+85 silly registry.get     'x-cache-hits': '1',
+85 silly registry.get     'x-timer': 'S1422354187.329621,VS0,VE1',
+85 silly registry.get     vary: 'Accept',
+85 silly registry.get     'content-length': '0',
+85 silly registry.get     'keep-alive': 'timeout=10, max=50',
+85 silly registry.get     connection: 'Keep-Alive' } ]
+86 verbose etag https://registry.npmjs.org/request from cache
+87 http 200 https://registry.npmjs.org/querystring
+88 silly registry.get cb [ 200,
+88 silly registry.get   { date: 'Tue, 27 Jan 2015 10:23:07 GMT',
+88 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+88 silly registry.get     etag: '"R9SJ7DH9M8O95P73BFG1ZQSX"',
+88 silly registry.get     'content-type': 'application/json',
+88 silly registry.get     'cache-control': 'max-age=60',
+88 silly registry.get     'content-length': '5710',
+88 silly registry.get     'accept-ranges': 'bytes',
+88 silly registry.get     via: '1.1 varnish',
+88 silly registry.get     age: '1',
+88 silly registry.get     'x-served-by': 'cache-fra1220-FRA',
+88 silly registry.get     'x-cache': 'HIT',
+88 silly registry.get     'x-cache-hits': '1',
+88 silly registry.get     'x-timer': 'S1422354187.336882,VS0,VE0',
+88 silly registry.get     vary: 'Accept',
+88 silly registry.get     'keep-alive': 'timeout=10, max=50',
+88 silly registry.get     connection: 'Keep-Alive' } ]
+89 http 304 https://registry.npmjs.org/underscore
+90 silly registry.get cb [ 304,
+90 silly registry.get   { date: 'Tue, 27 Jan 2015 10:23:07 GMT',
+90 silly registry.get     server: 'Apache',
+90 silly registry.get     via: '1.1 varnish',
+90 silly registry.get     'last-modified': 'Tue, 27 Jan 2015 10:22:23 GMT',
+90 silly registry.get     'cache-control': 'max-age=60',
+90 silly registry.get     etag: '"58OXGXW4G0USYZ2XSQPCQ33VZ"',
+90 silly registry.get     age: '44',
+90 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+90 silly registry.get     'x-cache': 'HIT',
+90 silly registry.get     'x-cache-hits': '3',
+90 silly registry.get     'x-timer': 'S1422354187.343998,VS0,VE0',
+90 silly registry.get     vary: 'Accept',
+90 silly registry.get     'content-length': '0',
+90 silly registry.get     'keep-alive': 'timeout=10, max=50',
+90 silly registry.get     connection: 'Keep-Alive' } ]
+91 verbose etag https://registry.npmjs.org/underscore from cache
+92 http 304 https://registry.npmjs.org/async
+93 silly registry.get cb [ 304,
+93 silly registry.get   { date: 'Tue, 27 Jan 2015 10:23:07 GMT',
+93 silly registry.get     server: 'Apache',
+93 silly registry.get     via: '1.1 varnish',
+93 silly registry.get     'last-modified': 'Tue, 27 Jan 2015 10:22:26 GMT',
+93 silly registry.get     'cache-control': 'max-age=60',
+93 silly registry.get     etag: '"81VKEYJHWHQK4F4ZFAK39G054"',
+93 silly registry.get     age: '41',
+93 silly registry.get     'x-served-by': 'cache-fra1220-FRA',
+93 silly registry.get     'x-cache': 'HIT',
+93 silly registry.get     'x-cache-hits': '3',
+93 silly registry.get     'x-timer': 'S1422354187.351173,VS0,VE0',
+93 silly registry.get     vary: 'Accept',
+93 silly registry.get     'content-length': '0',
+93 silly registry.get     'keep-alive': 'timeout=10, max=50',
+93 silly registry.get     connection: 'Keep-Alive' } ]
+94 verbose etag https://registry.npmjs.org/async from cache
+95 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+96 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+97 silly addNameRange number 2 { name: 'querystring',
+97 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+97 silly addNameRange   hasData: true }
+98 silly addNameRange versions [ 'querystring', [ '0.0.1', '0.0.4', '0.1.0', '0.2.0' ] ]
+99 silly lockFile 7e5f0068-querystring-0-9-0 querystring@^0.9.0
+100 silly lockFile 7e5f0068-querystring-0-9-0 querystring@^0.9.0
+101 silly addNameRange number 2 { name: 'async', range: '>=0.2.0-0 <0.3.0-0', hasData: true }
+102 silly addNameRange versions [ 'async',
+102 silly addNameRange   [ '0.1.0',
+102 silly addNameRange     '0.1.1',
+102 silly addNameRange     '0.1.2',
+102 silly addNameRange     '0.1.3',
+102 silly addNameRange     '0.1.4',
+102 silly addNameRange     '0.1.5',
+102 silly addNameRange     '0.1.6',
+102 silly addNameRange     '0.1.7',
+102 silly addNameRange     '0.1.8',
+102 silly addNameRange     '0.1.9',
+102 silly addNameRange     '0.1.10',
+102 silly addNameRange     '0.1.11',
+102 silly addNameRange     '0.1.12',
+102 silly addNameRange     '0.1.13',
+102 silly addNameRange     '0.1.14',
+102 silly addNameRange     '0.1.15',
+102 silly addNameRange     '0.1.16',
+102 silly addNameRange     '0.1.17',
+102 silly addNameRange     '0.1.18',
+102 silly addNameRange     '0.1.19',
+102 silly addNameRange     '0.1.20',
+102 silly addNameRange     '0.1.21',
+102 silly addNameRange     '0.1.22',
+102 silly addNameRange     '0.2.0',
+102 silly addNameRange     '0.2.1',
+102 silly addNameRange     '0.2.2',
+102 silly addNameRange     '0.2.3',
+102 silly addNameRange     '0.2.4',
+102 silly addNameRange     '0.2.5',
+102 silly addNameRange     '0.2.6',
+102 silly addNameRange     '0.2.7',
+102 silly addNameRange     '0.2.8',
+102 silly addNameRange     '0.2.9',
+102 silly addNameRange     '0.2.10',
+102 silly addNameRange     '0.3.0',
+102 silly addNameRange     '0.4.0',
+102 silly addNameRange     '0.4.1',
+102 silly addNameRange     '0.5.0',
+102 silly addNameRange     '0.6.0',
+102 silly addNameRange     '0.6.1',
+102 silly addNameRange     '0.6.2',
+102 silly addNameRange     '0.7.0',
+102 silly addNameRange     '0.8.0',
+102 silly addNameRange     '0.9.0' ] ]
+103 verbose addNamed [ 'async', '0.2.10' ]
+104 verbose addNamed [ '0.2.10', '0.2.10' ]
+105 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+106 verbose lock async@0.2.10 /Users/gzileni/.npm/098b530d-async-0-2-10.lock
+107 silly addNameRange number 2 { name: 'underscore',
+107 silly addNameRange   range: '>=1.7.0-0 <2.0.0-0',
+107 silly addNameRange   hasData: true }
+108 silly addNameRange versions [ 'underscore',
+108 silly addNameRange   [ '1.0.3',
+108 silly addNameRange     '1.0.4',
+108 silly addNameRange     '1.1.0',
+108 silly addNameRange     '1.1.1',
+108 silly addNameRange     '1.1.2',
+108 silly addNameRange     '1.1.3',
+108 silly addNameRange     '1.1.4',
+108 silly addNameRange     '1.1.5',
+108 silly addNameRange     '1.1.6',
+108 silly addNameRange     '1.1.7',
+108 silly addNameRange     '1.2.0',
+108 silly addNameRange     '1.2.1',
+108 silly addNameRange     '1.2.2',
+108 silly addNameRange     '1.2.3',
+108 silly addNameRange     '1.2.4',
+108 silly addNameRange     '1.3.0',
+108 silly addNameRange     '1.3.1',
+108 silly addNameRange     '1.3.2',
+108 silly addNameRange     '1.3.3',
+108 silly addNameRange     '1.4.0',
+108 silly addNameRange     '1.4.1',
+108 silly addNameRange     '1.4.2',
+108 silly addNameRange     '1.4.3',
+108 silly addNameRange     '1.4.4',
+108 silly addNameRange     '1.5.0',
+108 silly addNameRange     '1.5.1',
+108 silly addNameRange     '1.5.2',
+108 silly addNameRange     '1.6.0',
+108 silly addNameRange     '1.7.0' ] ]
+109 verbose addNamed [ 'underscore', '1.7.0' ]
+110 verbose addNamed [ '1.7.0', '1.7.0' ]
+111 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+112 verbose lock underscore@1.7.0 /Users/gzileni/.npm/900da168-underscore-1-7-0.lock
+113 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+114 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+115 silly lockFile d7996a11-async-0-2-0 async@^0.2.0
+116 silly lockFile d7996a11-async-0-2-0 async@^0.2.0
+117 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+118 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+119 silly lockFile efdc3de9-underscore-1-7-0 underscore@^1.7.0
+120 silly lockFile efdc3de9-underscore-1-7-0 underscore@^1.7.0
+121 error notarget No compatible version found: querystring@'>=0.9.0-0 <0.10.0-0'
+121 error notarget Valid install targets:
+121 error notarget ["0.0.1","0.0.4","0.1.0","0.2.0"]
+121 error notarget
+121 error notarget This is most likely not a problem with npm itself.
+121 error notarget In most cases you or one of your dependencies are requesting
+121 error notarget a package version that doesn't exist.
+122 error System Darwin 14.0.0
+123 error command "node" "/usr/local/bin/npm" "install"
+124 error cwd /Users/gzileni/GitHub/foursquare-geojson
+125 error node -v v0.10.33
+126 error npm -v 1.4.28
+127 error code ETARGET
+128 verbose exit [ 1, true ]

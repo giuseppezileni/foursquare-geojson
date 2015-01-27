@@ -25,5 +25,5 @@
     "request": "2.47.0",
     "async": "x.x.x",
     "querystring": "x.x.x"  
-  },
+  }
 }

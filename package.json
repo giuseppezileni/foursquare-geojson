@@ -1,0 +1,29 @@
+{
+  "name": "foursquare-geojson",
+  "version": "1.0.0",
+  "description": "nodeJS module to convert API Foursquare to GEOJSON",
+  "main": "foursquare-geojson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giuseppezileni/foursquare-geojson.git"
+  },
+  "keywords": [
+    "foursquare",
+    "geojson"
+  ],
+  "author": "Giuseppe Zileni (me@gzileni.name)",
+  "license": "MIT 1.0",
+  "bugs": {
+    "url": "https://github.com/giuseppezileni/foursquare-geojson/issues"
+  },
+  "homepage": "https://github.com/giuseppezileni/foursquare-geojson",
+  "dependencies": {
+    "underscore": "^1.7.0",
+    "request": "2.47.0",
+    "async": "x.x.x",
+    "querystring": "x.x.x"  
+  },
+}

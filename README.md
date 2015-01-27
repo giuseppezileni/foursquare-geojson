@@ -15,7 +15,7 @@ Explore famous site in a place according to geographical coordinates , and by se
 * section: One of food, drinks, coffee, shops, arts, outdoors, sights, trending or specials, nextVenues (venues frequently visited after a given venue), or topPicks (default value, a mix of recommendations generated without a query from the user). Choosing one of these limits results to venues with the specified category or property.
 * limit: Number of results to return, up to 50, defaults 10, raccomended 3.
 
-## Esempio
+## Example
 
 <pre>
 var foursquare = require("foursquare-geojson");

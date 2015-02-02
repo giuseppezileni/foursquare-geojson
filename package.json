@@ -1,6 +1,6 @@
 {
   "name": "foursquare-geojson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodeJS module to convert API Foursquare to GEOJSON",
   "main": "foursquare-geojson.js",
   "scripts": {
@@ -14,7 +14,10 @@
     "foursquare",
     "geojson"
   ],
-  "author": "Giuseppe Zileni (me@gzileni.name)",
+  "author": {
+    "name": "Giuseppe Zileni",
+    "url": "me@gzileni.name"
+  },
   "license": "MIT 1.0",
   "bugs": {
     "url": "https://github.com/giuseppezileni/foursquare-geojson/issues"
@@ -24,6 +27,12 @@
     "underscore": "^1.7.0",
     "request": "2.47.0",
     "async": "x.x.x",
-    "querystring": "x.x.x"  
-  }
+    "querystring": "x.x.x"
+  },
+  "readme": "# foursquare-geojson\nNodeJS module to read and convert API Foursquare do GEOJSON data.\n\n## Installation\n\n<pre>npm install foursquare-geojson</pre>\n\n## Methods\n\n<pre>explore(lat, lng, section, limit, callback)</pre>\nExplore famous site in a place according to geographical coordinates , and by sector. Return [Foursquare](https://developer.foursquare.com/docs/venues/explore) response json data, only groups array, that representing groups of recommendations, and [GeoJSON](http://geojson.org) for your map.\n\n* lat: Latitude of the user's location.  \n* lng: Longitude of the user's location. \n* section: One of food, drinks, coffee, shops, arts, outdoors, sights, trending or specials, nextVenues (venues frequently visited after a given venue), or topPicks (default value, a mix of recommendations generated without a query from the user). Choosing one of these limits results to venues with the specified category or property.\n* limit: Number of results to return, up to 50, defaults 10, raccomended 3.\n\n## Example\n\n<pre>\nvar foursquare = require(\"foursquare-geojson\");\n\nfunction load(callback) {\n    foursquare.explore(41.0946, 16.8706, 'arts', 3, function (results, geojson) { \n        // .............    \n    });\n};\n\n</pre>\n\n## Developers & Support\nGiuseppe Zileni ([Twitter](https://twitter.com/gzileni)/[Mail](mailto:me@gzileni.name)/[Site](http://www.gzileni.name))\n\n",
+  "readmeFilename": "README.md",
+  "gitHead": "ec5ad41ce2d586a68eac0ba8d287ec7d735ef035",
+  "_id": "foursquare-geojson@1.0.0",
+  "_shasum": "7c212556251f88259b2e4dc48897d4b5dd44801e",
+  "_from": "foursquare-geojson@x.x.x"
 }

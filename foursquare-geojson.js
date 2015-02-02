@@ -5,7 +5,7 @@ var async = require("async");
 var _config = require('./foursquare-geojson.config.js');
 var _geojson = require('./foursquare-geojson.geojson.js');
 
-module.exports.version = '1.0.0';
+module.exports.version = '1.0.1';
 
 var location = {
     lat: 0,
@@ -38,7 +38,7 @@ module.exports = {
         if (typeof callback === 'function') {
             callback(venues, geojson);   
         }
-    };
+    }
 };
 
 function _explore(callback) {

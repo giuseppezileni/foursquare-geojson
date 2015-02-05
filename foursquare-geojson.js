@@ -19,7 +19,7 @@ var geojson;
 
 module.exports = {
     
-    explore: function (lat, lng, section, limit, callback) {
+    explore: function (lat, lng, section, limit, callback_data) {
         location.lat = lat;
         location.lng = lng;
         location.limit = limit;
@@ -29,20 +29,25 @@ module.exports = {
                       _get_geojson], 
                      function (err, result) {
             if (!err) {
-                console.log(result);
+                // console.log(result);
+                if (result.indexOf('done')) {
+                    if (typeof callback_data === 'function') {
+                        callback_data(geojson);   
+                    }
+                }
             } else {
-                // some functions about errors   
+                // some functions about errors 
+                if (typeof callback_data === 'function') {
+                    callback_data(null);   
+                }  
             }
         });
-        
-        if (typeof callback === 'function') {
-            callback(venues, geojson);   
-        }
     }
 };
 
 function _explore(callback) {
     
+    console.log('explore data by foursquare ... ');
     if (typeof location.section === 'undefined' || location.section == null) {
         location.section = _config.section_default;
 	} else {
@@ -67,26 +72,33 @@ function _explore(callback) {
 
     var url = "https://api.foursquare.com/v2/venues/explore?" + 
                 querystring.stringify(params) + '&' + 
-                querystring.stringify(this.credentials);
+                querystring.stringify(_config.credentials);
         
+    console.log(url);
     request(url, function(error, response, body) {
         if (!error && response.statusCode == 200) {
           	var results = JSON.parse(body);
             venues = results.response.groups
-            callback(null,'explored');
+            callback(null,'next');
         } else {
           	console.log('error to getting data foursquare');
             venues = null;
-            callback(null,'explored');
+            callback('can\'t read data by foursquare',null);
         };
     });
 };
 
 function _get_geojson(callback) {
     
-    if (!venues) {
-        geojson = _geojson.get(venues);
-        callback(null, 'geojson');
-    };
+    console.log('get geojson venue ... ');
+    
+    if (_.size(venues) > 0) {
+        _geojson.get(venues, function (gj) {
+            geojson = gj;
+            callback(null, 'done');    
+        });
+    } else {
+        callback('no data by foursquare', null);
+    }
     
 };

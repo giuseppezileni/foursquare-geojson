@@ -8,7 +8,7 @@ NodeJS module to read and convert API Foursquare do GEOJSON data.
 ## Methods
 
 <pre>explore(lat, lng, section, limit, callback)</pre>
-Explore famous site in a place according to geographical coordinates , and by sector. Return [Foursquare](https://developer.foursquare.com/docs/venues/explore) response json data, only groups array, that representing groups of recommendations, and [GeoJSON](http://geojson.org) for your map.
+Explore famous site in a place according to geographical coordinates , and by sector. Return [GeoJSON](http://geojson.org) for your map with [Foursquare](https://developer.foursquare.com/docs/venues/explore) response json data, only groups array, that representing groups of recommendations.
 
 * lat: Latitude of the user's location.  
 * lng: Longitude of the user's location. 

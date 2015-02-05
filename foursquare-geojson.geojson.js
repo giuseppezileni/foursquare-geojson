@@ -1,4 +1,5 @@
-module.exports.version = '1.0.1';
+var _ = require('underscore');
+module.exports.version = '1.0.2';
 
 var geojson= {
     type : "FeatureCollection",
@@ -7,21 +8,24 @@ var geojson= {
 
 module.exports = {
 
-    get: function (venues) {
+    get: function (venues, callback) {
 
     	var self = this;
         
         geojson.features = [];
         
     	var j = 0;
-    	
-    	if (typeof data !== 'undefined') {
 
-    		while (data[j]) {
+    	console.log('reading venues data n.' + _.size(venues));
+
+    	if (_.size(venues) > 0) {
+
+    		while (venues[j]) {
     			console.log('---------');
-    			while (data[j].items[i]) {
-		    		var v = data[j].items[i].venue;
-
+    			var i = 0;
+    			while (venues[j].items[i]) {
+		    		var v = venues[j].items[i].venue;
+		    		console.log('venues: ' + JSON.stringify(v));
 		    		var title = v.name + '<br/>';
 
 		    		if (typeof v.location.formattedAddress != 'undefined') {
@@ -41,7 +45,8 @@ module.exports = {
 		                "title": title,
 		                "icon": 'foursquare',
 		                "location": [Number(v.location.lat),
-                                     Number(v.location.lng)]  
+                                     Number(v.location.lng)],
+                        "item": venues[j].items[i]
 		              },
 		              "geometry": {
 		                "type": "Point",
@@ -58,6 +63,8 @@ module.exports = {
 		    };
 	    };
 
-    	return geojson;
+    	if (typeof callback === 'function') {
+    		callback(geojson);
+    	}
     }
 };

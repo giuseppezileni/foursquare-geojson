@@ -1,6 +1,6 @@
 {
   "name": "foursquare-geojson",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "nodeJS module to convert API Foursquare to GEOJSON",
   "main": "foursquare-geojson.js",
   "scripts": {
